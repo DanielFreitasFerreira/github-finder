@@ -38,6 +38,11 @@
                       <p>${user.blog}</p>
                     </span>
                   </li>
+                  <li class="list-group-item">Bio: 
+                    <span class="d-flex"> 
+                      <p>${user.bio}</p>
+                    </span>
+                  </li>
                   <li class="list-group-item">Repositórios: <span class="badge bg-success d-flex">${user.public_repos}</span></li>
                   <li class="list-group-item">Seguidores: <span class="badge bg-primary d-flex"> ${user.followers}</span></li>
                   <li class="list-group-item">Seguindo:<span class="badge bg-info d-flex">${user.following}</span></li>
