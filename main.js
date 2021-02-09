@@ -1,4 +1,4 @@
-(function() {
+(function () {
   const search = document.getElementById("search");
   const profile = document.getElementById("profile");
   const url = "https://api.github.com/users";
@@ -26,24 +26,24 @@
     <div class="row">
       <div class="col-md-4">
           <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="${
-                user.avatar_url
-              }" alt="Card image cap">
+              <img class="card-img-top" src="${user.avatar_url}" alt="Card image cap">
               <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Repositórios: <span class="badge bg-success d-flex">${
-                    user.public_repos
-                  }</span></li>
-                  <li class="list-group-item">Seguidores: <span class="badge bg-primary d-flex"> ${
-                    user.followers
-                  }</span></li>
-                  <li class="list-group-item">Seguindo:<span class="badge bg-info d-flex">${
-                    user.following
-                  }</span></li>
+                  <li class="list-group-item">Nome: 
+                    <span class="d-flex">
+                      <h2>${user.name}</h2>
+                    </span>
+                  </li>
+                  <li class="list-group-item">Site: 
+                    <span class="d-flex"> 
+                      <p>${user.blog}</p>
+                    </span>
+                  </li>
+                  <li class="list-group-item">Repositórios: <span class="badge bg-success d-flex">${user.public_repos}</span></li>
+                  <li class="list-group-item">Seguidores: <span class="badge bg-primary d-flex"> ${user.followers}</span></li>
+                  <li class="list-group-item">Seguindo:<span class="badge bg-info d-flex">${user.following}</span></li>
               </ul>
               <div class="card-body">
-              <a href="${
-                user.html_url
-              }" target="_blank" class="btn btn-warning btn-block">Ver Perfil</a>
+              <a href="${user.html_url}" target="_blank" class="btn btn-warning btn-block">Ver Perfil</a>
               </div>
           </div>
       </div>
@@ -62,20 +62,12 @@
           <div class="card card-body mb-2">
               <div class="row">
                   <div class="col-md-6">
-                      <a href="${repo.html_url}" target="_blank">${
-        repo.name
-      }</a>
+                      <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                   </div>
-                  <div class="col-md-6 float-right">
-                      <span class="badge badge-primary">Stars: ${
-                        repo.stargazers_count
-                      }</span>
-                      <span class="badge badge-secondary">Watch: ${
-                        repo.watchers_count
-                      }</span>
-                      <span class="badge badge-success">Forks: ${
-                        repo.forks_count
-                      }</span>
+                  <div class="col-md-6 d-flex">
+                      <span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
+                      <span class="badge badge-secondary">Watch: ${repo.watchers_count}</span>
+                      <span class="badge badge-success">Forks: ${repo.forks_count}</span>
                   </div>
               </div>
           </div>
