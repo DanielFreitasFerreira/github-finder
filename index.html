@@ -11,43 +11,29 @@
 
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-dark bg-warning d-flex">
-      <div class="container">
-        <a href="#" class="navbar-brand">Github Finder</a>
-      </div>
-    </nav>
+  
+  <nav class="navbar navbar-dark bg-warning mb-3">
     <div class="container">
-      <div class="card card-body">
-        <h1 class="text-center">Pesquisar usuários do Github</h1>
-        <p class="lead text-center">
-          Digite para encontrar usuários e repositórios
-        </p>
-        <input id="search" type="text" class="form-control" required>
-      </div>
+      <a href="#" class="navbar-brand">GitHub Finder</a>
+    </div>
+  </nav>
+  <div class="container searchContainer">
+    <div class="search card card-body">
+      <h1>Pesquisar Usuários do GitHub</h1>
+      <p class="lead">
+        Digite um nome para encontrar usuários e repositórios
+      </p>
+      <input
+        id="search"
+        class="form-control"
+        placeholder="Digite o nome de um usuário..."
+        required
+      />
+    </div>
+    <br />
+    <div id="profile"></div>
+  </div>
 
-      <div id="profile"></div>
-    </div>
-  </header>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="" alt="">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><span class="badge"></span></li>
-          <li class="list-group-item"><span class="badge"></span></li>
-          <li class="list-group-item"><span class="badge"></span></li>
-        </ul>
-        <div class="card-body">
-          <a href="" class="btn btn-warning btn-block">Ver perfil</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-8">
-      <div id="repos"></div>
-    </div>
-    
   </div>
 
 
