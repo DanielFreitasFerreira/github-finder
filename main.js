@@ -4,7 +4,7 @@
   const url = "https://api.github.com/users";
   const client_id = "044ecbe0f9cd24459823";
   const client_secret = "440f7e976118b387fca6d14d9dbe9b742bf03d05";
-  const count = 7;
+  const count = 13;
   const sort = "created: asc";
 
   async function getUser(user) {
